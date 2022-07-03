@@ -1,0 +1,133 @@
+.secao.produtos-loja{
+    margin: 0 auto;
+}
+
+.cabecalho-loja{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.filtros-icone-wrapper,
+.ordenacao-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtros-icone-wrapper img {
+    width: 50px;
+}
+
+.filtros-icone-wrapper h2,
+.ordenacao-wrapper h2 {
+    font-family: QuickSand;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--highlight-color)
+}
+
+.ordenacao-wrapper .select{
+    margin-left: 10px;
+}
+
+.filtros-wrapper{
+    padding: 12px;   
+    width: 100%;
+    max-width: 190px;
+}
+
+.filtros-wrapper h2{
+    margin-top: 10px;
+}
+
+.filtros-lista{
+    margin-top: 5px;
+}
+
+.filtros-wrapper h2,
+.filtros-lista {
+    font-family: QuickSand;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+.filtros-lista {
+    font-size: 16px;
+    padding: 0;
+}
+
+.filtros-lista li {
+    display: flex;
+    align-items: center;
+} 
+
+.filtros-lista li input{
+    margin-right: 5px;
+} 
+
+.secao.produtos-loja-lista{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.secao.produtos-loja-lista .produtos-wrapper{
+    justify-content: flex-start;
+}
+
+.secao.produtos-loja-lista .produtos-wrapper .produto-link{
+    margin: 28px
+}
+
+.secao.produtos-loja-lista .produtos-wrapper .produto img{
+    max-width: 160px;
+}
+
+.secao.produtos-loja-lista .produtos-wrapper .produto .fone-image-wrapper {
+    width: 200px;
+    height: 200px;
+}
+
+.secao.produtos-loja-lista .produtos-wrapper .produto h2{
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 768px){
+    .filtros-wrapper{
+        position: absolute;
+        transform: translateX(-210px);
+        background-color: #fff; 
+        transition: all 0.3s ease-in-out;
+        height: 120vh;
+        top: 0;
+        z-index: 9;
+        overflow-y: auto;
+    }
+
+    .filtros-wrapper.aberto{
+        transform: translateX(0);
+    }
+
+    .cabecalho-loja{
+        display: block;
+    }
+
+    .filtros-icone-wrapper, 
+    .ordenacao-wrapper {
+        justify-content: flex-start;
+    }
+
+    .ordenacao-wrapper{
+        margin-left: 10px;
+    }
+
+    .secao.produtos-loja-lista .produtos-wrapper{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/loja.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/slick/slick.min.js"></script>
+    <title>Escuta Aí</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="nav-wrapper">
+            <div class="header-left-side">
+                <img src="./assets/images/logo.webp" alt="Escuta Aí" class="logo">
+                <nav>
+                    <ul class="navegacao desktop">
+                        <li><a href="index.html">início</a></li>
+                        <li><a href="loja.html">produtos</a></li>
+                        <li><a href="contato.html">sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right-side">
+                <div class="login-wrapper">
+                    <img src="./assets//images/user.png" alt="User" class="usuario-icon">
+                    <a href="login.html" class="login">Login</a>
+                </div>
+                <div class="carrinho-wrapper">
+                    <a href="./produto.html" class="carrinho">
+                        <img class="carrinho-icon" src="./assets/images/carrinho.png" alt="Carrinho">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="banner-wrapper">
+            <div class="banner-container">
+                <img class="header-banner" src="./assets/images/banner-1.webp" alt="">
+                <img class="header-banner" src="./assets/images/banner-2.webp" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="secao produtos-loja">
+            <div class="cabecalho-loja">
+                <div class="filtros-icone-wrapper">
+                    <img src="./assets/images/filtros.png" alt="Filtros">
+                    <h2>filtros</h2>
+                </div>
+                <div class="ordenacao-wrapper">
+                    <h2>ordernar por</h2>
+                    <select class="select" name="ordenacao" id="ordernacao">
+                        <option value="">mais recente</option>
+                        <option value="">mais antigo</option>
+                        <option value="">mais barato</option>
+                        <option value="">mais caro</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="secao produtos-loja-lista">
+            <div class="filtros-wrapper">
+                <h2>cor</h2>
+                <ul class="filtros-lista">
+                    <li><input type="checkbox" name="cor">branco</li>
+                    <li><input type="checkbox" name="cor">preto</li>
+                    <li><input type="checkbox" name="cor">rosa</li>
+                    <li><input type="checkbox" name="cor">roxo</li>
+                    <li><input type="checkbox" name="cor">azul</li>
+                    <li><input type="checkbox" name="cor">verde</li>
+                    <li><input type="checkbox" name="cor">vermelho</li>
+                </ul>
+                <h2>preço</h2>
+                <ul class="filtros-lista">
+                    <li><input type="checkbox" name="cor">R$ 50 - R$ 100</li>
+                    <li><input type="checkbox" name="cor">R$ 100 - R$ 500</li>
+                </ul>
+                <h2>tipo</h2>
+                <ul class="filtros-lista">
+                    <li><input type="checkbox" name="cor">headphone</li>
+                    <li><input type="checkbox" name="cor">acessório</li>
+                </ul>
+            </div>
+            <div class="produtos-wrapper">
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/fone-sem-fundo-roxo.png" alt="">
+                        </div>
+                        <h2>Headphone Stirrup Purple</h2>
+                        <p>R$ 459,90</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/fone-sem-fundo-rosa.png" alt="">
+                        </div>
+                        <h2>Headphone Stirrup Pink</h2>
+                        <p>R$ 459,90</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/fone-sem-fundo-azul.png" alt="">
+                        </div>
+                        <h2>Headphone Stirrup Blue</h2>
+                        <p>R$ 459,90</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/fone-sem-fundo-laranja.png" alt="">
+                        </div>
+                        <h2>Headphone Stirrup Red</h2>
+                        <p>R$ 459,90</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/fone-sem-fundo-preto.png" alt="">
+                        </div>
+                        <h2>Headphone Stirrup Black</h2>
+                        <p>R$ 459,90</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/fone-sem-fundo-branco.png" alt="">
+                        </div>
+                        <h2>Headphone Stirrup White</h2>
+                        <p>R$ 459,90</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/fone-sem-fundo-verde.png" alt="">
+                        </div>
+                        <h2>Headphone Stirrup Green</h2>
+                        <p>R$ 459,90</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/almofada-sem-fundo.png" alt="">
+                        </div>
+                        <h2>Pair Foom</h2>
+                        <p>R$ 50,00</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/cabo-sem-fundo-roxo.png" alt="">
+                        </div>
+                        <h2>Cabo 3m Purple</h2>
+                        <p>R$ 120,00</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/cabo-sem-fundo-rosa.png" alt="">
+                        </div>
+                        <h2>Cabo 3m Pink</h2>
+                        <p>R$ 120,00</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/cabo-sem-fundo-azul.png" alt="">
+                        </div>
+                        <h2>Cabo 3m Blue</h2>
+                        <p>R$ 120,00</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/cabo-sem-fundo-laranja.png" alt="">
+                        </div>
+                        <h2>Cabo 3m Red</h2>
+                        <p>R$ 120,00</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/cabo-sem-fundo-preto.png" alt="">
+                        </div>
+                        <h2>Cabo 3m Black</h2>
+                        <p>R$ 120,00</p>
+                    </div>
+                </a>
+                <a href="./produto.html" class="produto-link">
+                    <div class="produto">
+                        <div class="fone-image-wrapper">
+                            <img src="./assets/images/cabo-sem-fundo-verde.png" alt="">
+                        </div>
+                        <h2>Cabo 3m Green</h2>
+                        <p>R$ 120,00</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="newsletter-wrapper">
+            <h2>Receba as ofertas no seu email</h2>
+            <div class="email-form-wrapper">
+                <input type="text" placeholder="Email">
+                <button class="button">Cadastrar</button>
+            </div>
+        </div>
+        <section class="secao informacoes-footer">
+            <ul class="lista-informacoes">
+                <li>Pormoções</li>
+                <li>Categorias</li>
+            </ul>
+            <ul class="lista-informacoes">
+                <li>Assitência Técnica</li>
+                <li>Suporte</li>
+                <li>Sobre Ecusta Aí</li>
+            </ul>
+            <ul class="lista-informacoes">
+                <li>Siga a Escuta Aí</li>
+            </ul>
+        </section>
+    </footer>
+    <script src="./assets/js/loja.js"></script>
+</body>
+</html>

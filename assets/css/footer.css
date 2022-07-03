@@ -1,0 +1,89 @@
+footer{
+    margin-top: 100px;
+}
+.newsletter-wrapper{
+    width: 100%;
+    background-color: var(--highlight-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.newsletter-wrapper h2{
+    color: #eee;
+    font-family: QuickSand;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.newsletter-wrapper input{
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    padding: 0 10px;
+    font-family: QuickSand;
+    font-size: 16px;
+    font-weight: lighter;
+    color: var(--highlight-color);
+    outline: none;
+}
+
+.newsletter-wrapper .button{
+    border-radius: 8px;
+}
+
+.secao.informacoes-footer{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(165, 165, 165);
+    color: var(--highlight-color);
+    padding: 20px;
+    font-family: QuickSand;
+    font-size: 18px;
+}
+
+.secao.informacoes-footer ul {
+    margin-right: 100px;
+}
+
+.email-form-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.email-form-wrapper .button{
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .newsletter-wrapper{
+        display: block;
+        text-align: center;
+    }
+
+    .email-form-wrapper{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .email-form-wrapper input{
+        margin: 10px auto;
+        width: 100%;
+        max-width: none;
+    }
+
+    .email-form-wrapper .button{
+        margin: 5px auto;
+        width: 100%;
+    }
+
+    .secao.informacoes-footer{
+        display: block;
+    }
+}
