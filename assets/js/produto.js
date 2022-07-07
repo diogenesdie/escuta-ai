@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#cep").mask("00000-000");
     $('.galeria-produto-mobile').slick({
         dots: true,
         infinite: true,

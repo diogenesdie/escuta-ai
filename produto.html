@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./assets/css/produto.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/slick/slick-theme.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js" ></script>
+    <script src="./assets/js/jquery.mask.min.js"></script>
     <script type="text/javascript" src="./assets/js/slick/slick.min.js"></script>
     <title>Escuta Aí</title>
 </head>
@@ -57,7 +58,7 @@
 
                 <div class="preco-wrapper">
                     <p class="preco">R$ 459,90</p>
-                    <input type="text" class="quantidade">    
+                    <input type="text" class="quantidade" value="1">    
                 </div>
                 
                 <a href="./carrinho.html"><button class="adicionar-carrinho button">adicionar ao carrinho</button></a>
@@ -65,7 +66,7 @@
                 <div class="fretes-wrapper">
                     <img src="./assets/images/caminhao.png" alt="" class="frete-icone">
                     <h3>fretes e prazos</h3>
-                    <input class="input" type="text" placeholder="Insira seu CEP">
+                    <input class="input" type="text" placeholder="Insira seu CEP" id="cep">
                 </div>
             </div>
         </div>
@@ -92,9 +93,9 @@
                 <li>categorias</li>
             </ul>
             <ul class="lista-informacoes">
-                <li>assitência técnica</li>
+                <li>assistência técnica</li>
                 <li>suporte</li>
-                <li>sobre Ecusta Aí</li>
+                <li>sobre Escusta Aí</li>
             </ul>
             <ul class="lista-informacoes">
                 <li>siga a Escuta Aí</li>

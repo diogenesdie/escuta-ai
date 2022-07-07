@@ -1,0 +1,128 @@
+.linha{
+    height: 300px;
+    width: 1px;
+    background-color: #00000010;
+}
+
+.secao.checkout{
+    padding: 80px 10px;
+    min-height: 700px;
+}
+
+.secao.checkout .titulo{
+    text-align: center;
+}
+
+.secao.checkout .titulo h2{
+    font-family: QuickSand;
+    font-size: 28px;
+    font-weight: bold;
+    color: #080808
+}
+
+.secao.checkout .titulo h3{
+    font-family: QuickSand;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #080808
+}
+
+.formulario-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    border: 1px solid #00000010;
+    box-shadow: 1px 1px 1px 1px #00000010;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.formulario-wrapper .button-checkout-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formulario-wrapper .button{
+    margin-top: 10px;
+}
+
+.formulario-wrapper .input{
+    margin-top: 10px;
+}
+
+.formulario-wrapper h2{
+    font-family: QuickSand;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.formulario-checkout-wrapper{
+    margin-right: 10px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.dados-wrapper{
+    display: none;
+}
+
+.dados-wrapper.atual{
+    display: block;
+}
+
+.tipo-pagamento-label{
+    font-family: QuickSand;
+    font-size: 18px;
+    font-weight: bold;
+    color: #080808;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #00000010;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.tipo-pagamento-label input{
+    display: none;
+}
+
+.tipo-pagamento-label img{
+    width: 50px;
+    height: 50px;
+}
+
+.tipo-pagamento-label.selecionado{
+    background-color: #2C125C10;
+}
+
+.selecao-tipo-pagamento{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px){
+    .linha{
+        height: 1px;
+        width: 300px;
+    }
+
+    .formulario-checkout-wrapper{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .button-checkout-wrapper{
+        flex-direction: column;
+    }
+
+    .button-checkout-wrapper .button{
+        width: 100%;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+    <script src="./assets/js/jquery-3.6.0.min.js" ></script>
+    <script src="./assets/js/jquery.mask.min.js" ></script>
+    
+    <title>Escuta Aí</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="nav-wrapper">
+            <div class="header-left-side">
+                <img src="./assets/images/menu.png" alt="Menu" class="menu mobile">
+                <a href="./index.html"><img src="./assets/images/logo.webp" alt="Escuta Aí" class="logo"></a>
+                <nav>
+                    <ul class="navegacao">
+                        <li><a href="index.html">início</a></li>
+                        <li><a href="loja.html">produtos</a></li>
+                        <li><a href="https://open.spotify.com/playlist/6cKBgd3MM5jylkPwv5PRh4?si=7583b017136242a3" target="_blank">playlist</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right-side">
+                <div class="login-wrapper">
+                    <img src="./assets/images/user.png" alt="User" class="usuario-icon">
+                    <a href="login.html" class="login">login</a>
+                </div>
+                <div class="carrinho-wrapper">
+                    <a href="./carrinho.html" class="carrinho">
+                        <img class="carrinho-icon" src="./assets/images/carrinho.png" alt="Carrinho">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="secao checkout">
+            <div class="titulo">
+                <h2 class="checkout-titulo">insira seus dados pessoais</h2>
+            </div>
+            <div class="formulario-wrapper">
+                <div class="formulario-checkout-wrapper">
+                    <div class="formulario-checkout">
+                        <div class="dados-pessoais-wrapper dados-wrapper atual" data-titulo="insira seus dados pessoais">
+                            <input class="input" type="text" placeholder="Email">
+                            <input class="input" type="text" placeholder="Nome completo">
+                            <input class="input" type="text" placeholder="CPF" id="cpf">
+                            <input class="input" type="text" placeholder="Data de nascimento" id="data-nascimento">
+                            <input class="input" type="text" placeholder="Celular" id="celular">
+                        </div>
+                        <div class="dados-entrega-wrapper dados-wrapper" data-titulo="insira seus dados de entrega">
+                            <input class="input" type="text" placeholder="Estado">
+                            <input class="input" type="text" placeholder="CEP" id="cep">
+                            <input class="input" type="text" placeholder="Endereço">
+                            <input class="input" type="text" placeholder="Bairro">
+                            <input class="input" type="number" placeholder="Número">
+                            <input class="input" type="text" placeholder="Complemento">
+                        </div>
+                        <div class="dados-pagamento-wrapper dados-wrapper" data-titulo="insira seus dados de pagamento">
+                            <div class="selecao-tipo-pagamento">
+                                <label class="tipo-pagamento-label selecionado" for="cartao-credito">
+                                    <input type="radio" name="tipo-pagamento" class="tipo-pagamento" id="cartao-credito" value="cartao-credito">
+                                    <img src="./assets/images/cartao.png" alt="Cartão de crédito">
+                                </label>
+                                <label class="tipo-pagamento-label" for="boleto">
+                                    <input type="radio" name="tipo-pagamento" class="tipo-pagamento" id="boleto" value="boleto">
+                                    <img src="./assets/images/boleto.png" alt="Boleto">
+                                </label>
+                                <label class="tipo-pagamento-label" for="pix">
+                                    <input type="radio" name="tipo-pagamento" class="tipo-pagamento" id="pix" value="pix">
+                                    <img src="./assets/images/pix.png" alt="PIX">
+                                </label>
+                            </div>
+                            <div class="form-pagamento">
+                                <input class="input" type="text" placeholder="Nome no cartão">
+                                <input class="input" type="text" placeholder="Número do cartão" id="numero-cartao">
+                                <input class="input" type="text" placeholder="CVV">
+                                <input class="input" type="text" placeholder="Data de vencimento">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-checkout-wrapper">
+                        <button class="button anterior">anterior</button>
+                        <button class="button proximo">próximo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="newsletter-wrapper">
+            <h2>receba as ofertas no seu email</h2>
+            <div class="email-form-wrapper">
+                <input type="text" placeholder="Email">
+                <button class="button">cadastrar</button>
+            </div>
+        </div>
+        <section class="secao informacoes-footer">
+            <ul class="lista-informacoes">
+                <li>promoções</li>
+                <li>categorias</li>
+            </ul>
+            <ul class="lista-informacoes">
+                <li>assistência técnica</li>
+                <li>suporte</li>
+                <li>sobre Escusta Aí</li>
+            </ul>
+            <ul class="lista-informacoes">
+                <li>siga a Escuta Aí</li>
+            </ul>
+        </section>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/checkout.js"></script>
+</body>
+</html>
