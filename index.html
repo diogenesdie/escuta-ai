@@ -13,54 +13,61 @@
     <title>Escuta Aí</title>
 </head>
 <body>
+    <div class="overlay"></div>
     <header>
         <div class="nav-wrapper">
             <div class="header-left-side">
-                <img src="./assets/images/logo.webp" alt="Escuta Aí" class="logo">
+                <img src="./assets/images/menu.png" alt="Menu" class="menu mobile">
+                <a href="./index.html"><img src="./assets/images/logo.webp" alt="Escuta Aí" class="logo"></a>
                 <nav>
-                    <ul class="navegacao desktop">
+                    <ul class="navegacao">
                         <li><a href="index.html">início</a></li>
                         <li><a href="loja.html">produtos</a></li>
-                        <li><a href="contato.html">sobre</a></li>
+                        <li><a href="https://open.spotify.com/playlist/6cKBgd3MM5jylkPwv5PRh4?si=7583b017136242a3" target="_blank">playlist</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="header-right-side">
                 <div class="login-wrapper">
-                    <img src="./assets//images/user.png" alt="User" class="usuario-icon">
-                    <a href="login.html" class="login">Login</a>
+                    <img src="./assets/images/user.png" alt="User" class="usuario-icon">
+                    <a href="login.html" class="login">login</a>
                 </div>
                 <div class="carrinho-wrapper">
-                    <a href="./produto.html" class="carrinho">
+                    <a href="./carrinho.html" class="carrinho">
                         <img class="carrinho-icon" src="./assets/images/carrinho.png" alt="Carrinho">
                     </a>
                 </div>
             </div>
         </div>
-        <div class="banner-wrapper">
+        <div class="banner-wrapper desktop">
             <div class="banner-container">
                 <img class="header-banner" src="./assets/images/banner-1.webp" alt="">
                 <img class="header-banner" src="./assets/images/banner-2.webp" alt="">
             </div>
-            <!-- <button class="btn">Conheça os produtos</button> -->
+        </div>
+        <div class="banner-wrapper mobile">
+            <div class="banner-container">
+                <img class="header-banner" src="./assets/images/banner-1-mobile.webp" alt="">
+                <img class="header-banner" src="./assets/images/banner-2-mobile.webp" alt="">
+            </div>
         </div>
     </header>
     <main>
         <section class="secao informacoes">
             <div class="informacao-wrapper">
                 <img src="./assets/images/caminhao.png" alt="Caminhao">
-                <p>Frete grátis para a região sul e sudeste</p>
+                <p>frete grátis para a região sul e sudeste</p>
             </div>
             <div class="informacao-wrapper">
                 <img src="./assets/images/sorriso.png" alt="Sorriso">
-                <p>Suporte para dúvidas com escutadores profissionais</p>
+                <p>suporte para dúvidas com escutadores profissionais</p>
             </div>
         </section>
         <section class="secao apresetacao-cores-wrapper">
             <div class="apresentacao-container">
-                <h2>Temos seu estilo</h2>
-                <h3>Cada um tem sua personalidade</h3>
-                <h3>Nós temos todas</h3>
+                <h2>temos seu estilo</h2>
+                <h3>cada um tem sua personalidade</h3>
+                <h3>nós temos todas</h3>
                 <div class="fone-wrapper">
                     <img class="fone-apresentacao" src="./assets/images/fone-sem-fundo-preto.png" alt="Fone">
                     <div class="circle"></div>
@@ -95,9 +102,9 @@
         </section>
         <section class="secao produtos">
             <div class="titulo">
-                <h2>Escolha ouvir tudo</h2>
-                <h3>Linha Stirrup</h3>
-                <h3>Tecnologia ANC cancelamento de ruídos</h3>
+                <h2>escolha ouvir tudo</h2>
+                <h3>linha Stirrup</h3>
+                <h3>tecnologia ANC cancelamento de ruídos</h3>
             </div>
             <div class="produtos-wrapper">
                 <a href="./produto.html" class="produto-link">
@@ -159,27 +166,28 @@
     </main>
     <footer>
         <div class="newsletter-wrapper">
-            <h2>Receba as ofertas no seu email</h2>
+            <h2>receba as ofertas no seu email</h2>
             <div class="email-form-wrapper">
                 <input type="text" placeholder="Email">
-                <button class="button">Cadastrar</button>
+                <button class="button">cadastrar</button>
             </div>
         </div>
         <section class="secao informacoes-footer">
             <ul class="lista-informacoes">
-                <li>Pormoções</li>
-                <li>Categorias</li>
+                <li>promoções</li>
+                <li>categorias</li>
             </ul>
             <ul class="lista-informacoes">
-                <li>Assitência Técnica</li>
-                <li>Suporte</li>
-                <li>Sobre Ecusta Aí</li>
+                <li>assitência técnica</li>
+                <li>suporte</li>
+                <li>sobre Ecusta Aí</li>
             </ul>
             <ul class="lista-informacoes">
-                <li>Siga a Escuta Aí</li>
+                <li>siga a Escuta Aí</li>
             </ul>
         </section>
     </footer>
+    <script src="./assets/js/inicio.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+.secao.apresetacao-cores-wrapper{
+    padding: 100px 10px 0 10px;
+    margin-top: 0;
+}
+
+.circle {
+    background-color: #40257A;
+    width: 180px;
+    height: 180px;
+    left: 90px;
+    top: -20px;
+}
+
+.fone-wrapper{
+    margin-top: 30px;
+}
+
+.fone-apresentacao{
+    max-width: 300px;
+}
+
+.secao.produtos{
+    margin: 50px auto;
+}
+
+.playlist-wrapper{
+    width: 100%;
+    max-width: 768px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+a.voltar-loja-link{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+button.voltar-loja{
+    width: 100%;
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 768px){
+    a.voltar-loja-link,
+    button.voltar-loja{
+        max-width: none;
+    }   
+
+    a.voltar-loja-link{
+        padding: 0 20px;    
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .circle {
+        left: 40px;
+        width: 145px;
+        height: 145px;
+    }
+
+    .fone-apresentacao{
+        max-width: 250px;
+    }
+
+    .secao.apresetacao-cores-wrapper h2{
+        font-size: 24px;    
+    }
+    
+}

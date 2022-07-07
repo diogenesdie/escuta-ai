@@ -66,7 +66,7 @@ header .nav-wrapper {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #00000010;
-    width: 100%;
+    width: 100vw;
     background-color: #fff;
     z-index: 9;
 }
@@ -79,7 +79,14 @@ header .nav-wrapper .header-left-side {
 
 header .header-banner {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.menu.mobile{
+    width: 100%;
+    max-width: 36px;
+    margin-left: 10px;
+    padding: 8px;
 }
 
 .banner-wrapper {
@@ -395,4 +402,40 @@ header .header-banner {
         display: block;
     }
 
+    header img.logo{
+        max-width: 125px;
+    }
+
+    header nav ul.navegacao{
+        position: fixed;
+        display: block;
+        left: 0;
+        top: 0;
+        min-width: 170px;
+        width: auto;
+        padding: 10px;
+        background-color: #fff;
+        height: 110vh;
+        transform: translateX(-180px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    header nav ul.navegacao.open{
+        transform: translateX(0);
+    }
+
+    header nav ul.navegacao li{
+        margin-bottom: 10px;
+    }
+
+    .login-wrapper img.usuario-icon,
+    .carrinho-wrapper img.carrinho-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .login-wrapper,
+    .carrinho-wrapper{
+        margin-right: 8px;
+    }
 }

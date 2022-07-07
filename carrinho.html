@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/carrinho.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/slick/slick.min.js"></script>
+    <title>Escuta Aí</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="nav-wrapper">
+            <div class="header-left-side">
+                <img src="./assets/images/menu.png" alt="Menu" class="menu mobile">
+                <a href="./index.html"><img src="./assets/images/logo.webp" alt="Escuta Aí" class="logo"></a>
+                <nav>
+                    <ul class="navegacao">
+                        <li><a href="index.html">início</a></li>
+                        <li><a href="loja.html">produtos</a></li>
+                        <li><a href="https://open.spotify.com/playlist/6cKBgd3MM5jylkPwv5PRh4?si=7583b017136242a3" target="_blank">playlist</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right-side">
+                <div class="login-wrapper">
+                    <img src="./assets/images/user.png" alt="User" class="usuario-icon">
+                    <a href="login.html" class="login">login</a>
+                </div>
+                <div class="carrinho-wrapper">
+                    <a href="./carrinho.html" class="carrinho">
+                        <img class="carrinho-icon" src="./assets/images/carrinho.png" alt="Carrinho">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="secao carrinho">
+            <div class="carrinho-container">
+                <div class="carrinho-itens-wrapper">
+                    <div class="icone-carrinho-wrapper">
+                        <img src="./assets/images/carrinho.png" alt="Carrinho">
+                        <h1>carrinho</h1>
+                    </div>
+                    <div class="carrinho-sombra">
+                        <div class="carrinho-cabecalho">
+                            <div class="carrinho-cabecalho-item primeiro">
+                                <h1>produto</h1>
+                            </div>
+                            <div class="carrinho-cabecalho-item" style="width: 100px;">
+                                <h1>quantidade</h1>
+                            </div>
+                            <div class="carrinho-cabecalho-item" style="width: 100px;">
+                                <h1>preço</h1>
+                            </div>
+                            <div class="carrinho-cabecalho-item" style="width: 100px;">
+                                <h1>total</h1>
+                            </div>
+                        </div>
+                        <div class="carrinho-itens">
+                            <div class="carrinho-itens-item">
+                                <div class="carrinho-itens-item-imagem">
+                                    <img src="./assets/images/fone-com-fundo-roxo.jpg" alt="Produto">
+                                    <div class="info-produto">
+                                        <h1>Headphone Stirrup Purple</h1>
+                                        <div class="mobile-info mobile">
+                                            <div class="carrinho-itens-item-quantidade" style="width: 100px;">
+                                                <input class="input-quantidade" type="number" name="quantidade" id="quantidade" value="1">
+                                            </div>
+                                            <div class="carrinho-itens-item-preco" style="width: 100px;">
+                                                <h1><span>R$</span>  459,90</h1>
+                                            </div>
+                                            <div class="carrinho-itens-item-total" style="width: 100px;">
+                                                <h1><span>R$</span>  459,90</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="carrinho-itens-item-quantidade desktop" style="width: 100px;">
+                                    <input class="input-quantidade" type="number" name="quantidade" id="quantidade" value="1">
+                                </div>
+                                <div class="carrinho-itens-item-preco desktop" style="width: 100px;">
+                                    <h1><span>R$</span>  459,90</h1>
+                                </div>
+                                <div class="carrinho-itens-item-total desktop" style="width: 100px;">
+                                    <h1><span>R$</span>  459,90</h1>
+                                </div>
+                            </div>
+                            <div class="carrinho-itens-item">
+                                <div class="carrinho-itens-item-imagem">
+                                    <img src="./assets/images/fone-com-fundo-rosa.jpg" alt="Produto">
+                                    <div class="info-produto">
+                                        <h1>Headphone Stirrup Pink</h1>
+                                        <div class="mobile-info mobile">
+                                            <div class="carrinho-itens-item-quantidade" style="width: 100px;">
+                                                <input class="input-quantidade" type="number" name="quantidade" id="quantidade" value="2">
+                                            </div>
+                                            <div class="carrinho-itens-item-preco" style="width: 100px;">
+                                                <h1><span>R$</span>  459,90</h1>
+                                            </div>
+                                            <div class="carrinho-itens-item-total" style="width: 100px;">
+                                                <h1><span>R$</span>  919,80</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="carrinho-itens-item-quantidade desktop" style="width: 100px;">
+                                    <input class="input-quantidade" type="number" name="quantidade" id="quantidade" value="1">
+                                </div>
+                                <div class="carrinho-itens-item-preco desktop" style="width: 100px;">
+                                    <h1><span>R$</span>  459,90</h1>
+                                </div>
+                                <div class="carrinho-itens-item-total desktop" style="width: 100px;">
+                                    <h1><span>R$</span>  459,90</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-carrinho-wrapper">
+                <a href="./loja.html"><button class="button voltar-loja">voltar à loja</button></a>
+                <a href="./pedido.html"><button class="button finalizar-compra">finalizar compra</button></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="newsletter-wrapper">
+            <h2>receba as ofertas no seu email</h2>
+            <div class="email-form-wrapper">
+                <input type="text" placeholder="Email">
+                <button class="button">cadastrar</button>
+            </div>
+        </div>
+        <section class="secao informacoes-footer">
+            <ul class="lista-informacoes">
+                <li>promoções</li>
+                <li>categorias</li>
+            </ul>
+            <ul class="lista-informacoes">
+                <li>assitência técnica</li>
+                <li>suporte</li>
+                <li>sobre Ecusta Aí</li>
+            </ul>
+            <ul class="lista-informacoes">
+                <li>siga a Escuta Aí</li>
+            </ul>
+        </section>
+    </footer>
+    <script src="./assets/js/loja.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

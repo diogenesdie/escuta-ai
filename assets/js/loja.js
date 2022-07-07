@@ -1,22 +1,31 @@
 $(document).ready(function(){
     function abreFechaFiltros() {
+        
+
+        if( $('.filtros-wrapper').hasClass('aberto') ){
+            
+        } else {
+        }
+    }
+
+    $(document).on('click', '.filtros-icone-wrapper', function(e){
         if( $(window).width() > 768 ) {
             return;
         }
 
-        if( $('.filtros-wrapper').hasClass('aberto') ){
-            $('.filtros-wrapper').removeClass('aberto');
-            $('.overlay').fadeOut(500);
-            $('body').css('overflow', 'auto');
-        } else {
-            $('.filtros-wrapper').addClass('aberto');
-            $('.overlay').fadeIn(500);
-            $('body').css('overflow', 'hidden');
+        $('.filtros-wrapper').addClass('aberto');
+        $('.overlay').fadeIn(500);
+        $('body').css('overflow', 'hidden');
+    })
+    $(document).on('click', '.overlay', function(e){
+        if( $(window).width() > 768 ) {
+            return;
         }
-    }
-
-    $(document).on('click', '.filtros-icone-wrapper', abreFechaFiltros)
-    $(document).on('click', '.overlay', abreFechaFiltros)
+        
+        $('.filtros-wrapper').removeClass('aberto');
+        $('.overlay').fadeOut(500);
+        $('body').css('overflow', 'auto');
+    })
 
     $('.banner-container').slick({
         dots: true,

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">  
     <link rel="stylesheet" href="./assets/css/loja.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/slick/slick-theme.css"/>
@@ -18,31 +18,38 @@
     <header>
         <div class="nav-wrapper">
             <div class="header-left-side">
-                <img src="./assets/images/logo.webp" alt="Escuta Aí" class="logo">
+                <img src="./assets/images/menu.png" alt="Menu" class="menu mobile">
+                <a href="./index.html"><img src="./assets/images/logo.webp" alt="Escuta Aí" class="logo"></a>
                 <nav>
-                    <ul class="navegacao desktop">
+                    <ul class="navegacao">
                         <li><a href="index.html">início</a></li>
                         <li><a href="loja.html">produtos</a></li>
-                        <li><a href="contato.html">sobre</a></li>
+                        <li><a href="https://open.spotify.com/playlist/6cKBgd3MM5jylkPwv5PRh4?si=7583b017136242a3" target="_blank">playlist</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="header-right-side">
                 <div class="login-wrapper">
-                    <img src="./assets//images/user.png" alt="User" class="usuario-icon">
-                    <a href="login.html" class="login">Login</a>
+                    <img src="./assets/images/user.png" alt="User" class="usuario-icon">
+                    <a href="login.html" class="login">login</a>
                 </div>
                 <div class="carrinho-wrapper">
-                    <a href="./produto.html" class="carrinho">
+                    <a href="./carrinho.html" class="carrinho">
                         <img class="carrinho-icon" src="./assets/images/carrinho.png" alt="Carrinho">
                     </a>
                 </div>
             </div>
         </div>
-        <div class="banner-wrapper">
+        <div class="banner-wrapper desktop">
             <div class="banner-container">
                 <img class="header-banner" src="./assets/images/banner-1.webp" alt="">
                 <img class="header-banner" src="./assets/images/banner-2.webp" alt="">
+            </div>
+        </div>
+        <div class="banner-wrapper mobile">
+            <div class="banner-container">
+                <img class="header-banner" src="./assets/images/banner-1-mobile.webp" alt="">
+                <img class="header-banner" src="./assets/images/banner-2-mobile.webp" alt="">
             </div>
         </div>
     </header>
@@ -220,27 +227,28 @@
     </main>
     <footer>
         <div class="newsletter-wrapper">
-            <h2>Receba as ofertas no seu email</h2>
+            <h2>receba as ofertas no seu email</h2>
             <div class="email-form-wrapper">
                 <input type="text" placeholder="Email">
-                <button class="button">Cadastrar</button>
+                <button class="button">cadastrar</button>
             </div>
         </div>
         <section class="secao informacoes-footer">
             <ul class="lista-informacoes">
-                <li>Pormoções</li>
-                <li>Categorias</li>
+                <li>promoções</li>
+                <li>categorias</li>
             </ul>
             <ul class="lista-informacoes">
-                <li>Assitência Técnica</li>
-                <li>Suporte</li>
-                <li>Sobre Ecusta Aí</li>
+                <li>assitência técnica</li>
+                <li>suporte</li>
+                <li>sobre Ecusta Aí</li>
             </ul>
             <ul class="lista-informacoes">
-                <li>Siga a Escuta Aí</li>
+                <li>siga a Escuta Aí</li>
             </ul>
         </section>
     </footer>
     <script src="./assets/js/loja.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
