@@ -100,7 +100,7 @@
 
 @media only screen and (max-width: 768px){
     .filtros-wrapper{
-        position: absolute;
+        position: fixed;
         transform: translateX(-210px);
         background-color: #fff; 
         transition: all 0.3s ease-in-out;
